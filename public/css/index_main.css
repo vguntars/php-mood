@@ -1,0 +1,811 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button {
+    outline: none;
+    text-transform: uppercase;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.67;
+    color: #fff;
+    /*color: black;*/
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: #fff;
+}
+
+
+/*Trīs bumbuļu izvēlnes sākums*/
+
+.btn-ring {
+    background: none;
+    padding: 0;
+    margin: 5px 5px;
+    height: 9px;
+    width: 9px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 50%
+}
+
+.btn-ring-active, .btn-ring:hover {
+    background-color: rgba(255, 255, 255, .7);
+    border: 2px solid rgba(255, 255, 255, .7);
+}
+
+
+/*Trīs bumbuļu izvēlnes beigas*/
+
+
+/*Horizontālās izvēlnes sākums*/
+
+.menu-section-horizontal {
+    /*background-color: blue;*/
+    text-align: center;
+}
+
+.box-menu-horizontal {
+    display: inline-block;
+    width: 155px;
+}
+
+.btn-menu-horizontal {
+    padding: 3px 11px;
+    margin: 0;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 7px;
+    font-size: 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-menu-horizontal-active, .btn-menu-horizontal:hover {
+    border-color: rgba(255, 255, 255, .7);
+}
+
+
+/*Horizontālās izvēlnes beigas*/
+
+
+/*BLOKI LAPĀ SĀKUMS*/
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+div.box-section {
+    min-width: 1280px;
+    width: 1280px;
+    padding: 0 60px;
+    margin: 0 auto;
+    /*border: 1px solid black;
+min-width: 322px;
+width: 1282px;*/
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*Peldošā izvēlne sākums*/
+
+.box-top-navi {
+    background-color: rgba(211, 53, 35, .9);
+    font-size: 14px;
+    font-weight: 300;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: background-color .8s;
+}
+
+.box-top-navi .box-right {
+    /*background-color: yellow;*/
+    float: right;
+}
+
+.box-top-navi ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box-top-navi li.left {
+    display: block;
+    float: left;
+}
+
+.box-top-navi .pic-logo-navi {
+    float: left;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.box-top-navi .txt-logo-navi {
+    float: left;
+    display: block;
+    padding: 25px 15px 20px;
+}
+
+.box-top-navi ul a {
+    /*background-color: blue;*/
+    display: block;
+    padding: 20px 10px;
+    border-top: 5px solid rgba(255, 255, 255, 0);
+    text-align: center;
+}
+
+.box-top-navi ul a:hover {
+    border-top-color: rgba(255, 255, 255, .4);
+}
+
+.box-top-navi ul a.hover-navi {
+    border-top-color: rgba(255, 255, 255, .8);
+}
+
+.box-top-navi select {
+    background-color: inherit;
+    margin: 27px 0 0 20px;
+    float: right;
+    border: none;
+}
+
+.box-top-navi select option {
+    background-color: rgb(211, 53, 35);
+}
+
+
+/*Peldošā izvēlne beigas*/
+
+
+/*Sarkanais 1.bloks sākums*/
+
+.box-head {
+    position: relative;
+}
+
+.box-head .box-section {
+    /*background-color: rgba(0,0,0,.3);*/
+}
+
+.box-head .box-buttons-ring {
+    /*background-color: black;*/
+    width: 5px;
+    position: absolute;
+    right: 80px;
+    top: 50%;
+}
+
+.box-head .box-logo-head {
+    width: 79.1%;
+    margin: 240px auto 0;
+}
+
+.box-head .box-logo-head img {
+    width: 100%;
+}
+
+.box-head .box-txt-head {
+    /*background-color: gold;*/
+    width: 79.1%;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.box-head .box-socicons-head {
+    /*background-color: blue;*/
+    margin: 25px auto 55px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.box-head .box-socicons-head a {
+    /*background-color: gold;*/
+    padding: 0px 10px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.box-head .box-socicons-head a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.box-head .box-slide-all {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0px;
+    height: 100%;
+    z-index: -10;
+    overflow: hidden;
+}
+
+.box-head .box-slide {
+    background-size: cover;
+    height: 100%;
+    transition: transform .7s;
+}
+
+.box-head .box-slide-tone {
+    height: 100%;
+}
+
+
+/*Sarkanais 1.bloks beigas*/
+
+
+/*Sarkanais 2.bloks sākums*/
+
+.box-services {
+    background-color: rgba(211, 53, 35, 1);
+    /*position: relative;*/
+    text-align: center;
+}
+
+.box-services h3 {
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.box-services .box-section-descrptions {
+    padding-bottom: 40px;
+    font-size: 0;
+}
+
+.box-services .box-descrption {
+    /*background-color: blue;*/
+    font-size: 20px;
+    display: inline-block;
+    width: 25%;
+    min-width: 200px;
+    vertical-align: top;
+    padding: 30px 15px;
+}
+
+.box-services .box-descrption .box-graphics {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.box-services .box-descrption img {
+    width: 100%;
+}
+
+.box-services .box-descrption h4 {
+    margin: 0;
+}
+
+.box-services .box-descrption p {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/*Sarkanais 2.bloks beigas*/
+
+
+/*Zaļais 1.bloks sākums*/
+
+.box-works {
+    background-color: rgba(87, 170, 104, 1);
+    background-image: url("../grafika/GREENBg.png");
+    background-size: cover;
+    position: relative;
+}
+
+.box-works .box-tone {
+    background-color: rgba(87, 170, 104, .3);
+    text-align: center;
+}
+
+.box-works h3 {
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.box-works .box-txt-works {
+    width: 84.5%;
+    margin: 20px auto 0;
+}
+
+.box-works .box-buttons-ring {
+    /*background-color: black;*/
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+/*Zaļais 1.bloks beigas
+
+
+/*Zaļais 2.bloks (fotogalerija) sākums*/
+
+.box-gallery {
+    background-color: rgba(87, 170, 104, 1);
+    background-image: url("../grafika/GREENBg.png");
+    background-size: cover;
+}
+
+.box-gallery .box-tone {
+    background-color: rgba(87, 170, 104, .3);
+    text-align: center;
+    font-size: 0;
+}
+
+.box-gallery .box-slide-all {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 1280px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.box-gallery .box-slide {
+    /*background-color: yellow;*/
+    flex: 0 0 100%;
+    width: 100%;
+    font-size: 0;
+    transition: transform .5s, opacity .3s ease-in;
+}
+
+.box-gallery .box-foto {
+    width: 320px;
+    height: 300px;
+    display: inline-block;
+    position: relative;
+}
+
+.box-gallery .box-foto img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-gallery .box-hover {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(87, 170, 104, .7);
+    opacity: 0;
+}
+
+.box-gallery .box-foto:hover .box-hover {
+    opacity: 1;
+    transition: opacity .3s ease-out;
+}
+
+.box-gallery .box-ringtxt {
+    /*background-color: yellow;*/
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.35;
+    position: absolute;
+    top: 55%;
+}
+
+.box-gallery .box-ring {
+    /*background-color: blue;*/
+    width: 96px;
+    height: 96px;
+    margin: 0 auto;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+
+}
+
+.box-gallery .box-foto:hover .box-ring {
+    width: 48px;
+    height: 48px;
+    transition: .6s ease-out;
+}
+
+.box-gallery .box-ring span {
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    margin: 4px auto;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+}
+
+.box-gallery .box-ringtxt .txt-foto {
+    display: block;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+
+/*Zaļais 2.bloks (fotogalerija) beigas*/
+
+
+/*JūrasZaļais 1.bloks sākums*/
+
+.box-price {
+    background-color: rgba(111, 250, 255, 1);
+    background-image: url("../grafika/GREENBg.png");
+    background-size: cover;
+    /*position: relative;*/
+}
+
+.box-price .box-tone {
+    background-color: rgba(111, 250, 255, .3);
+}
+
+.box-price h3 {
+    margin: 0;
+    padding-top: 100px;
+}
+
+.box-price .menu-section-horizontal {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+
+/*JūrasZaļais 1.bloks beias*/
+
+
+/*JūrasZaļais 2.bloks sākums*/
+
+.box-pricelist {
+    background-color: rgba(42, 87, 89, 1);
+}
+
+.box-pricelist table {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.box-pricelist th, .box-pricelist td {
+    width: 25%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.box-pricelist th {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 40px 0 20px;
+    text-transform: uppercase;
+}
+
+.box-pricelist tbody tr td {
+    font-size: 16px;
+    padding: 12px 5px 12px;
+    color: rgba(255, 255, 255, .7);
+}
+
+.box-pricelist tfoot tr td {
+    font-size: 30px;
+    padding: 14px 5px 14px;
+}
+
+.box-pricelist .row-signup td {
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    padding: 20px 0 80px;
+}
+
+.box-pricelist .btn-signup {
+    font-size: 16px;
+    padding: 5px 40px;
+    margin: 0;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box-pricelist .hover {
+    background-color: rgba(49, 103, 105, 1);
+}
+
+.box-pricelist .btn-signup:hover, .box-pricelist .btn-hover {
+    background-color: rgba(71, 133, 135, 1);
+}
+
+
+/*JūrasZaļais 2.bloks beias*/
+
+
+/*Zaļais 3.bloks*/
+
+.box-team {
+    background-color: rgba(97, 180, 114, 1);
+    text-align: center;
+}
+
+.box-team h3 {
+    font-size: 28px;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+.box-team .box-txt-team {
+    padding: 0 100px;
+    line-height: 1.5;
+}
+
+.box-team .box-buttons-ring {
+    /*background-color: black;*/
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.box-team .box-slide-all {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 1120px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.box-team .box-slide {
+    /*background-color: yellow;*/
+    flex: 0 0 100%;
+    width: 100%;
+    font-size: 0;
+    transition: transform .5s;
+}
+
+.box-team .box-descrption {
+    /*background-color: blue;*/
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    margin: 0 10px;
+}
+
+.box-team .box-foto {
+    width: 100%;
+    height: 290px;
+    position: relative;
+}
+
+.box-team .box-foto img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-team .box-fotohover {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+    position: absolute;
+    background-color: rgba(87, 170, 104, .7);
+    opacity: 0;
+    line-height: 1.35;
+}
+
+.box-team .box-fotohover .txt-foto1 {
+    /*background-color: blue;*/
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.box-team .box-fotohover .txt-foto2 {
+    /*background-color: red;*/
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.box-team .box-foto:hover .box-fotohover {
+    opacity: 1;
+    transition: opacity .3s ease-out;
+}
+
+.box-team .box-socicons {
+    /*background-color: blue;*/
+    width: 150px;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.box-team .box-socicons a {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 2px 0;
+    color: rgba(255, 255, 255, .5);
+}
+
+.box-team .box-socicons a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.box-team .txt-name {
+    display: block;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.box-team .txt-office {
+    display: block;
+    margin: 2px 0 75px;
+    font-size: 13px;
+    opacity: .7;
+}
+
+
+/*Zaļais 3.bloks beigas*/
+
+
+/*Zilais 1.bloks sākums*/
+
+.box-contact {
+    background-color: rgba(46, 45, 107, 1);
+    background-image: url("../grafika/BLUEbg.png");
+    background-size: cover;
+}
+
+.box-contact .box-tone {
+    background-color: rgba(46, 45, 107, .3);
+}
+
+.box-contact h3 {
+    font-size: 28px;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.box-contact form {
+    /*background-color: yellow;*/
+    width: 53%;
+    min-width: 320px;
+    margin: 35px auto 0;
+}
+
+.box-contact .input-txt {
+    width: 100%;
+    padding: 12px 12px;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    background-color: rgba(46, 45, 107, .7);
+    font-size: 13px;
+}
+
+.box-contact textarea.input-txt {
+    height: 230px;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+}
+
+.box-contact .input-err {
+    border-color: rgba(255, 100, 100, .7);
+}
+
+.box-contact input[type=submit] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 0;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.box-contact .box-txt {
+    padding: 20px 0 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.box-contact .input-box {
+    position: relative;
+}
+
+.message-err {
+    width: 150px;
+    background-color: rgba(255, 100, 100, .7);
+    display: block;
+    position: absolute;
+    padding: 5px;
+    top: 0;
+    right: -160px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 5px;
+}
+
+.message-err:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px 8px 8px 0;
+    border-color: transparent rgba(255, 100, 100, .7);
+    display: block;
+    width: 0;
+    z-index: 1;
+    margin-top: -8px;
+    margin-left: -8px;
+    top: 50%;
+    left: 0;
+}
+
+
+/*Zilais 1.bloks beigas*/
+
+
+/*Zilais 2.bloks (karte) sākums*/
+
+.box-map {
+    background-color: rgba(46, 45, 107, 1);
+}
+
+.box-map .map-lp87 {
+    height: 400px;
+    width: 100%;
+}
+
+.box-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.box-map h6 {
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    padding: 30px 60px;
+}
+
+
+/*Zilais 2.bloks (karte) beigas*/
+
+
+/*Projekta beigas*/

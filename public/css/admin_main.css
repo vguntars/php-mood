@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    background-color: #aaa;
+}
+
+.box-table {
+    margin: 20px auto;
+    width: 90%;
+    min-width: 320px;
+    background-color: #ccc;
+}
+
+.box-table table {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.box-table th, .box-table td {
+    padding: 2px;
+}
+
+.box-table td {
+    border: 1px solid #fff;
+}
